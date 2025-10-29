@@ -8,4 +8,8 @@
          <loc>https://mysite.com/creacio-preus/</loc>
          <lastmod>2025-10-29</lastmod>
     </url>
+    <url>
+         <loc>https://mysite.com/validaci%C3%B3-dades/</loc>
+         <lastmod>2025-10-29</lastmod>
+    </url>
 </urlset>
