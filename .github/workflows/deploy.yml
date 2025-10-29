@@ -1,40 +1,42 @@
 name: Deploy Docs
 
-# Este flujo de trabajo se ejecuta cada vez que haces un 'push'
-# a la rama 'main' (o la que uses como fuente).
 on:
   push:
     branches:
-      - main  # ⬅️ CAMBIA esto si tu rama principal se llama 'master'
+      - main  # Asegúrate que esta es tu rama principal
 
-# Definición de los trabajos (jobs) a realizar
 jobs:
   deploy:
-    # Ejecuta el trabajo en el último entorno de Ubuntu
     runs-on: ubuntu-latest
-    
-    # Pasos que se ejecutarán en el trabajo
     steps:
       # 1. Checkout del código
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          # Necesario para el despliegue con gh-pages
+          # Necesario para el despliegue
           fetch-depth: 0 
           
       # 2. Configurar Python
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: 3.x # Puedes especificar una versión si lo necesitas
+          python-version: 3.x 
 
-      # 3. Instalar MkDocs y dependencias
+      # 3. Instalar MkDocs y dependencias (Asegúrate de que TODOS los plugins estén aquí)
       - name: Install MkDocs and Dependencies
         run: |
-          pip install mkdocs mkdocs-material # Instala MkDocs y el tema Material
-          # Si usas plugins adicionales (como mkdocs-exclude), inclúyelos aquí:
-          # pip install mkdocs-exclude
+          pip install mkdocs mkdocs-material
+          # pip install <CUALQUIER-OTRO-PLUGIN>
 
-      # 4. Despliegue en GitHub Pages (el paso crucial)
+      # 4. Construir el sitio de MkDocs
+      - name: Build MkDocs site
+        run: mkdocs build
+
+      # 5. Desplegar con la Acción de GitHub Pages (Método más estable)
+      # Esta acción se encargará de subir la carpeta 'site/' a la rama 'gh-pages'
       - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          publish_branch: gh-pages # La rama donde se despliega
