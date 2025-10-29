@@ -25,14 +25,14 @@ En aquest apartat s'explica quin es el procediment a seguir per a la creació  d
 Una vegada obert excel amb el document proporcionat per la generalitat, hem d'importar les macros per fer-les servir.
 Cal accedir al apartat de `Programador`, i obrir la consola de `Visual Basic`, que podem observar a l'inici de la imatge.
 
-![Accedir a Visual Basic](./img/accceidr_VB.png)
+![Accedir a Visual Basic](./img/creacio-preus/accceidr_VB.png)
 
 !!! info "Obrir la pestanya Programador"
     No esta habilitada normalment, informar-se de com activar-la
 
 Una vegada dins de la consola, importem les macros dins del projecte. Hem de fer clic dret a sobre del nom del document.
 
-![importacio de macros](./img/importar-macros.png)
+![importacio de macros](./img/creacio-preus/importar-macros.png)
 
 ### 1. Adaptació del document
 
@@ -40,17 +40,16 @@ Una vegada tinguem els fitxers descarregats, necessitem adaptar-los per a que la
 
 - Assegurar-se de que totes les files tenen dades
 
-![exemple formateig doc](./img/exemle-formateig-document.png)
+![exemple formateig doc](./img/creacio-preus/exemle-formateig-document.png)
 
 
 - Eliminar les dades d'altres anys
 
-![eliminar dades altres anys](./img/eliminar-dades.png)
+![eliminar dades altres anys](./img/creacio-preus/eliminar-dades.png)
 
 ### 2. Revisió dels noms dels Productes
 
 Com bé sabem, els arxius son cambiants, per tant ens hem d'asegurar de que els noms dels productes coincideixen amb el que volem.
 
 Per aixó em 
-
 
