@@ -39,9 +39,12 @@ Una vegada dins de la consola, importem les macros dins del projecte. Hem de fer
 Una vegada tinguem els fitxers descarregats, necessitem adaptar-los per a que la Macro funcioni correctament. Els arxius de la generalitat tenen canvis, que s'han anat produint durant els anys.
 
 - Assegurar-se de que totes les files tenen dades
+
 ![exemple formateig doc](./img/exemle-formateig-document.png)
 
+
 - Eliminar les dades d'altres anys
+
 ![eliminar dades altres anys](./img/eliminar-dades.png)
 
 ### 2. Revisió dels noms dels Productes
