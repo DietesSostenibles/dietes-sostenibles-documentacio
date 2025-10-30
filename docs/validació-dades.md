@@ -40,26 +40,27 @@ Crea la taula on vols aplicar la validació de dades en un altre full, ha de ser
 
 ### 2.1. Aplicar la Validació de Dades
 
-1.  **Vés al Full de Destí:** Navega al full on vols la llista desplegable.
-2.  **Seleccionar Cel·la:** Fes clic a la cel·la o rang de cel·les on aplicaràs la llista.
-3.  **Obrir Validació de Dades:**
+- **Vés al Full de Destí:** Navega al full on vols la llista desplegable.
+- **Seleccionar Cel·la:** Fes clic a la cel·la o rang de cel·les on aplicaràs la llista.
+- **Obrir Validació de Dades:**
     * Vés a la pestanya **Dades**.
     * Al grup "Eines de dades", fes clic a **Validació de dades**. 
 
 ![accedir validaacio dades](./img/validacio-dades/accedir%20a%20la%20validacio.png)
 
 
-4.  **Configurar la Llista:**
+- **Configurar la Llista:**
     * A la pestanya **Configuració**, a **Permet**, selecciona **Llista**.
     * Al camp **Origen**, escriu el símbol d'igual (`=`) seguit de la funció:
-        =INDIRECTE("nom_taula_referenciada")
+        =INDIRECTO("nom_taula_referenciada")
 
 ![validacio dades](./img/validacio-dades/validacio-dades.png)
 
 
-    !!! nota "Informació sobre la funció"
-           La funció `INDIRECTE` permet que Excel llegeixi la referència a la taula d'un altre full en la validació de dades. És **crucial** utilitzar el nom de la taula.
+!!! nota "Informació sobre la funció"
+    La funció `INDIRECTE` permet que Excel llegeixi la referència a la taula d'un altre full en la validació de dades. És **crucial** utilitzar el nom de la taula.
 
-5.  **Acceptar:** Fes clic a **Accepta**.
 
-Ara, la cel·la a `Full1` tindrà una llista desplegable amb els valors de la columna de la teva taula a `Full2`. Si afegeixes o elimines elements a la taula d'origen, la llista desplegable s'**actualitzarà automàticament** (si has utilitzat una referència a la taula o un rang dinàmic).
+- **Acceptar:** Fes clic a **Accepta**.
+
+Ara, la cel·la a `Full1` tindrà una llista desplegable amb els valors de la columna de la teva taula a `Full2`. Si afegeixes o elimines elements a la taula d'origen, la llista desplegable s'**actualitzarà automàticament**.
