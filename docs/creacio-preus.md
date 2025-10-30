@@ -5,18 +5,24 @@
 
 En aquest apartat s'explica quin es el procediment a seguir per a la creació  dels fixers de preus a partir de les dades proporcionades per la generalitat amb l'ajuda de Macros i Excel
 
+---
+
 ## Materials
 
  - [Per accedir als documents de la generalitat clica aquí](https://agricultura.gencat.cat/ca/departament/observatori-agroambiental/estadistiques/observatori-agroalimentari-preus/preus-origen/llotges-mercats/productes-agricoles/index.html)
 
+
  - [Descarregar Macros](https://drive.google.com/drive/folders/1HJ7q8u6ZCWGBks0cR9Pcr28xWqqdXVOn?usp=sharing)
 
+---
 
 ## Prerequisits
 
 1. Preferiblement utilizat sistema operatiu Windows
 2. Disposar d'Excel o Fulla de càlcul de google (Aquest tuorial es una guía per excel)
 3. Haver descarregat els fitxers dels links superiors
+
+---
 
 ## Passos per la Creació dels Arxius
 
@@ -97,6 +103,8 @@ Disposem d'una macro anomenada `RenameAndSaveToPath` , la qual guardarà els arx
 - Cambiar la destinació
 
 ![modificar path](./img/creacio-preus/modifcar_path.png)
+
+---
 
 ## Què fa cada Macro?
 
