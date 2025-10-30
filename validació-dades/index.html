@@ -496,7 +496,7 @@
 <h2 id="2-validacio-de-dades-des-dun-altre-full">2. Validació de Dades des d'un Altre Full</h2>
 <p>Crea la taula on vols aplicar la validació de dades en un altre full, ha de ser una taula com la de l'apartat anterior</p>
 <h3 id="21-aplicar-la-validacio-de-dades">2.1. Aplicar la Validació de Dades</h3>
-<ol>
+<ul>
 <li><strong>Vés al Full de Destí:</strong> Navega al full on vols la llista desplegable.</li>
 <li><strong>Seleccionar Cel·la:</strong> Fes clic a la cel·la o rang de cel·les on aplicaràs la llista.</li>
 <li><strong>Obrir Validació de Dades:</strong><ul>
@@ -504,24 +504,25 @@
 <li>Al grup "Eines de dades", fes clic a <strong>Validació de dades</strong>. </li>
 </ul>
 </li>
-</ol>
+</ul>
 <p><img alt="accedir validaacio dades" src="../img/validacio-dades/accedir%20a%20la%20validacio.png" /></p>
-<ol>
+<ul>
 <li><strong>Configurar la Llista:</strong><ul>
 <li>A la pestanya <strong>Configuració</strong>, a <strong>Permet</strong>, selecciona <strong>Llista</strong>.</li>
 <li>Al camp <strong>Origen</strong>, escriu el símbol d'igual (<code>=</code>) seguit de la funció:
-    =INDIRECTE("nom_taula_referenciada")</li>
+    =INDIRECTO("nom_taula_referenciada")</li>
 </ul>
 </li>
-</ol>
+</ul>
 <p><img alt="validacio dades" src="../img/validacio-dades/validacio-dades.png" /></p>
-<pre><code>!!! nota "Informació sobre la funció"
-       La funció `INDIRECTE` permet que Excel llegeixi la referència a la taula d'un altre full en la validació de dades. És **crucial** utilitzar el nom de la taula.
-</code></pre>
-<ol>
+<div class="admonition nota">
+<p class="admonition-title">Informació sobre la funció</p>
+<p>La funció <code>INDIRECTE</code> permet que Excel llegeixi la referència a la taula d'un altre full en la validació de dades. És <strong>crucial</strong> utilitzar el nom de la taula.</p>
+</div>
+<ul>
 <li><strong>Acceptar:</strong> Fes clic a <strong>Accepta</strong>.</li>
-</ol>
-<p>Ara, la cel·la a <code>Full1</code> tindrà una llista desplegable amb els valors de la columna de la teva taula a <code>Full2</code>. Si afegeixes o elimines elements a la taula d'origen, la llista desplegable s'<strong>actualitzarà automàticament</strong> (si has utilitzat una referència a la taula o un rang dinàmic).</p>
+</ul>
+<p>Ara, la cel·la a <code>Full1</code> tindrà una llista desplegable amb els valors de la columna de la teva taula a <code>Full2</code>. Si afegeixes o elimines elements a la taula d'origen, la llista desplegable s'<strong>actualitzarà automàticament</strong>.</p>
 
 
 
