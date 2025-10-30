@@ -22,11 +22,14 @@
     
     
       
-        <title>Creació arxius per a Sèries Històriques - Documentació Model Optimització</title>
+        <title>✔️ Creació arxius per a Sèries Històriques - Documentació Model Optimització</title>
       
     
     
       <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -55,7 +58,12 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="brown">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -100,15 +108,15 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Creació arxius per a Sèries Històriques
+              ✔️ Creació arxius per a Sèries Històriques
             
           </span>
         </div>
       </div>
     </div>
     
+      
     
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -232,7 +240,7 @@
   
   
   <span class="md-ellipsis">
-    Creació arxius per a Sèries Històriques
+    ✔️ Creació arxius per a Sèries Històriques
     
   </span>
   
@@ -245,7 +253,7 @@
   
   
   <span class="md-ellipsis">
-    Creació arxius per a Sèries Històriques
+    ✔️ Creació arxius per a Sèries Històriques
     
   </span>
   
@@ -331,6 +339,24 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#3-revisio-i-creacio-del-les-fulles-a-excel" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Revisió i creació del les fulles a excel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-executar-la-macro-selectandtranferitems" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Executar la Macro SelectAndTranferItems
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -356,7 +382,7 @@
   
   
   <span class="md-ellipsis">
-    📊 Validació de Dades a Excel
+    ✔️ Validació de Dades a Excel
     
   </span>
   
@@ -456,6 +482,24 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#3-revisio-i-creacio-del-les-fulles-a-excel" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Revisió i creació del les fulles a excel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-executar-la-macro-selectandtranferitems" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Executar la Macro SelectAndTranferItems
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -477,7 +521,7 @@
 
 
 
-<h1 id="creacio-arxius-per-a-series-historiques">Creació arxius per a Sèries Històriques</h1>
+<h1 id="creacio-arxius-per-a-series-historiques">✔️ Creació arxius per a Sèries Històriques</h1>
 <h2 id="introduccio">Introducció</h2>
 <p>En aquest apartat s'explica quin es el procediment a seguir per a la creació  dels fixers de preus a partir de les dades proporcionades per la generalitat amb l'ajuda de Macros i Excel</p>
 <h2 id="materials">Materials</h2>
@@ -507,18 +551,63 @@ Cal accedir al apartat de <code>Programador</code>, i obrir la consola de <code>
 <p>Una vegada dins de la consola, importem les macros dins del projecte. Hem de fer clic dret a sobre del nom del document.</p>
 <p><img alt="importacio de macros" src="../img/creacio-preus/importar-macros.png" /></p>
 <h3 id="1-adaptacio-del-document">1. Adaptació del document</h3>
+<div class="admonition nota">
+<p class="admonition-title">Informació Complementària</p>
+<p>Aquest i la resta s'apartats es realitzaràn amb un fitxer de l'any 2013</p>
+</div>
 <p>Una vegada tinguem els fitxers descarregats, necessitem adaptar-los per a que la Macro funcioni correctament. Els arxius de la generalitat tenen canvis, que s'han anat produint durant els anys.</p>
 <ul>
 <li>Assegurar-se de que totes les files tenen dades</li>
 </ul>
-<p><img alt="exemple formateig doc" src="../img/creacio-preus/exemle-formateig-document.png" /></p>
+<p><img alt="exemple formateig doc" src="../img/creacio-preus/exemple_formateig_doc.png" /></p>
 <ul>
-<li>Eliminar les dades d'altres anys</li>
+<li>Eliminar les dades d'altres anys.</li>
 </ul>
-<p><img alt="eliminar dades altres anys" src="../img/creacio-preus/eliminar-dades.png" /></p>
+<p><img alt="eliminar dades altres anys" src="../img/creacio-preus/eliminar_dades.png" /></p>
+<div class="admonition nota">
+<p class="admonition-title">Informació Complementària</p>
+<p>Eliminant la columna <code>B</code>, ja en tindriem suficient. La macro llegeix els productes de la columna <code>B</code> per selecionar les files que contenen els productes que busquem.</p>
+</div>
 <h3 id="2-revisio-dels-noms-dels-productes">2. Revisió dels noms dels Productes</h3>
-<p>Com bé sabem, els arxius son cambiants, per tant ens hem d'asegurar de que els noms dels productes coincideixen amb el que volem.</p>
-<p>Per aixó em </p>
+<p>Com bé sabem, els arxius son cambiants, per tant ens hem d'asegurar de que els noms dels productes coincideixen amb el que volem abans d'aplicar les macros a qualsevol arxiu.</p>
+<p>Per aixó em d'accedir a la consola de Visual Basic, per així poder modificar la macro i poder-la adaptar a les nostres necessitats.</p>
+<p>Un cop sóm a la consola, hem d'obir el fitxer úbicat a <code>mòdulos</code> anomenat <code>SelectAndTransferItems</code> i modificar l'array següent al nostre gust.</p>
+<p><img alt="modificar array de productes" src="../img/creacio-preus/modificar-array-productes.png" /></p>
+<div class="admonition nota">
+<p class="admonition-title">Informació Complementària</p>
+<p>Si afeigim més productes, tambè cal modificar el tamany de l'array. Es troba definit a l'apartat de variables a l'inici del codi.</p>
+</div>
+<h3 id="3-revisio-i-creacio-del-les-fulles-a-excel">3. Revisió i creació del les fulles a excel</h3>
+<p>La macro <code>SelectAndTransferItems</code> serà la que crei el nostre document final amb els preus. Peró per això, necessesitem modificar el nom de la fulla que contè els productes a <code>Cereals</code>, i crear una nova fulla anomenada <code>dades</code>.</p>
+<p><img alt="modificacio i creacio fulles noves" src="../img/creacio-preus/modificaci%C3%B3-fulls-excel.png" /></p>
+<p>Per últim, cal afeigir aquesta capçalera al full de <code>dades</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Mercat</th>
+<th style="text-align: center;">Producte</th>
+<th style="text-align: center;">Unitat</th>
+<th style="text-align: center;">Preu</th>
+<th style="text-align: center;">Data - Día</th>
+<th style="text-align: center;">Data - Setmana</th>
+<th style="text-align: center;">Data - Mes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-executar-la-macro-selectandtranferitems">4. Executar la Macro <code>SelectAndTranferItems</code></h3>
+<p>Una vegada ens hem assegurat de que el fitxer esta ben formatat, i que no hi haurà errors, podem executar la Macro.</p>
+<p>Aquesta, marcarà de color <code>groc</code> quins són els productes que ha selecionat i els escriurà al full <code>dades</code>, d'aquesta manera podem assegurar-nos de que ha generat l'arxiu amb totes les files desitjades.</p>
 
 
 
@@ -571,6 +660,8 @@ Cal accedir al apartat de <code>Programador</code>, i obrir la consola de <code>
     
     
       <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../javascripts/export-table.js"></script>
       
     
   </body>
