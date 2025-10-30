@@ -504,20 +504,22 @@
 <li>Al grup "Eines de dades", fes clic a <strong>Validació de dades</strong>. </li>
 </ul>
 </li>
-<li>
-<p><strong>Configurar la Llista:</strong></p>
-<ul>
+</ol>
+<p><img alt="accedir validaacio dades" src="../img/validacio-dades/accedir%20a%20la%20validacio.png" /></p>
+<ol>
+<li><strong>Configurar la Llista:</strong><ul>
 <li>A la pestanya <strong>Configuració</strong>, a <strong>Permet</strong>, selecciona <strong>Llista</strong>.</li>
 <li>Al camp <strong>Origen</strong>, escriu el símbol d'igual (<code>=</code>) seguit de la funció:
-    =INDIRECTE("nom_taula_referenciada")
-    <code>``
-    !!! nota "Informació sobre la funció"
-             La funció</code>INDIRECTE` permet que Excel llegeixi la referència a la taula d'un altre full en la validació de dades. És <strong>crucial</strong> utilitzar el nom de la taula.</li>
+    =INDIRECTE("nom_taula_referenciada")</li>
 </ul>
 </li>
-<li>
-<p><strong>Acceptar:</strong> Fes clic a <strong>Accepta</strong>.</p>
-</li>
+</ol>
+<p><img alt="validacio dades" src="../img/validacio-dades/validacio-dades.png" /></p>
+<pre><code>!!! nota "Informació sobre la funció"
+       La funció `INDIRECTE` permet que Excel llegeixi la referència a la taula d'un altre full en la validació de dades. És **crucial** utilitzar el nom de la taula.
+</code></pre>
+<ol>
+<li><strong>Acceptar:</strong> Fes clic a <strong>Accepta</strong>.</li>
 </ol>
 <p>Ara, la cel·la a <code>Full1</code> tindrà una llista desplegable amb els valors de la columna de la teva taula a <code>Full2</code>. Si afegeixes o elimines elements a la taula d'origen, la llista desplegable s'<strong>actualitzarà automàticament</strong> (si has utilitzat una referència a la taula o un rang dinàmic).</p>
 
