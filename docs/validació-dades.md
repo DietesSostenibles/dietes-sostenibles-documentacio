@@ -45,13 +45,20 @@ Crea la taula on vols aplicar la validació de dades en un altre full, ha de ser
 3.  **Obrir Validació de Dades:**
     * Vés a la pestanya **Dades**.
     * Al grup "Eines de dades", fes clic a **Validació de dades**. 
+
+![accedir validaacio dades](./img/validacio-dades/accedir%20a%20la%20validacio.png)
+
+
 4.  **Configurar la Llista:**
     * A la pestanya **Configuració**, a **Permet**, selecciona **Llista**.
     * Al camp **Origen**, escriu el símbol d'igual (`=`) seguit de la funció:
         =INDIRECTE("nom_taula_referenciada")
-        ```
-        !!! nota "Informació sobre la funció"
-                 La funció `INDIRECTE` permet que Excel llegeixi la referència a la taula d'un altre full en la validació de dades. És **crucial** utilitzar el nom de la taula.
+
+![validacio dades](./img/validacio-dades/validacio-dades.png)
+
+
+    !!! nota "Informació sobre la funció"
+           La funció `INDIRECTE` permet que Excel llegeixi la referència a la taula d'un altre full en la validació de dades. És **crucial** utilitzar el nom de la taula.
 
 5.  **Acceptar:** Fes clic a **Accepta**.
 
