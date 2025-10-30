@@ -1,4 +1,4 @@
-# Creació arxius per a Sèries Històriques
+# ✔️ Creació arxius per a Sèries Històriques
 
 
 ## Introducció
@@ -36,20 +36,52 @@ Una vegada dins de la consola, importem les macros dins del projecte. Hem de fer
 
 ### 1. Adaptació del document
 
+!!! nota "Informació Complementària"
+    Aquest i la resta s'apartats es realitzaràn amb un fitxer de l'any 2013
+
+
 Una vegada tinguem els fitxers descarregats, necessitem adaptar-los per a que la Macro funcioni correctament. Els arxius de la generalitat tenen canvis, que s'han anat produint durant els anys.
 
 - Assegurar-se de que totes les files tenen dades
 
-![exemple formateig doc](./img/creacio-preus/exemle-formateig-document.png)
+![exemple formateig doc](./img/creacio-preus/exemple_formateig_doc.png)
 
 
-- Eliminar les dades d'altres anys
+- Eliminar les dades d'altres anys.
 
-![eliminar dades altres anys](./img/creacio-preus/eliminar-dades.png)
+![eliminar dades altres anys](./img/creacio-preus/eliminar_dades.png)
+
+!!! nota "Informació Complementària"
+    Eliminant la columna `B`, ja en tindriem suficient. La macro llegeix els productes de la columna `B` per selecionar les files que contenen els productes que busquem.
 
 ### 2. Revisió dels noms dels Productes
 
-Com bé sabem, els arxius son cambiants, per tant ens hem d'asegurar de que els noms dels productes coincideixen amb el que volem.
+Com bé sabem, els arxius son cambiants, per tant ens hem d'asegurar de que els noms dels productes coincideixen amb el que volem abans d'aplicar les macros a qualsevol arxiu.
 
-Per aixó em 
+Per aixó em d'accedir a la consola de Visual Basic, per així poder modificar la macro i poder-la adaptar a les nostres necessitats.
 
+Un cop sóm a la consola, hem d'obir el fitxer úbicat a `mòdulos` anomenat `SelectAndTransferItems` i modificar l'array següent al nostre gust.
+
+![modificar array de productes](./img/creacio-preus/modificar-array-productes.png)
+
+!!! nota "Informació Complementària"
+    Si afeigim més productes, tambè cal modificar el tamany de l'array. Es troba definit a l'apartat de variables a l'inici del codi.
+
+### 3. Revisió i creació del les fulles a excel
+
+La macro `SelectAndTransferItems` serà la que crei el nostre document final amb els preus. Peró per això, necessesitem modificar el nom de la fulla que contè els productes a `Cereals`, i crear una nova fulla anomenada `dades`.
+
+![modificacio i creacio fulles noves](./img/creacio-preus/modificació-fulls-excel.png)
+
+Per últim, cal afeigir aquesta capçalera al full de `dades`
+
+
+| Mercat | Producte | Unitat | Preu | Data - Día | Data - Setmana | Data - Mes |
+| :----: | :------: | :----: | :--: | :--------: | :------------: | :--------: |
+
+
+### 4. Executar la Macro `SelectAndTranferItems`
+
+Una vegada ens hem assegurat de que el fitxer esta ben formatat, i que no hi haurà errors, podem executar la Macro.
+
+Aquesta, marcarà de color `groc` quins són els productes que ha selecionat i els escriurà al full `dades`, d'aquesta manera podem assegurar-nos de que ha generat l'arxiu amb totes les files desitjades.

@@ -1,4 +1,4 @@
-# 📊  Validació de Dades a Excel
+# ✔️ Validació de Dades a Excel
 
 ## Creació de Taules i Validació de Dades entre Fulls a Excel
 

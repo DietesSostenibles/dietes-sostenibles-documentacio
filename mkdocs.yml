@@ -2,6 +2,9 @@ site_name: Documentació Model Optimització
 site_url: https://mysite.com
 theme:
   name: material
+  palette: 
+    primary: grey
+    accent: brown
 
 
 markdown_extensions:
@@ -9,3 +12,7 @@ markdown_extensions:
   # Se recomienda también para anidamiento y otras características:
   - pymdownx.details
   - pymdownx.superfences
+  - tables
+
+extra_javascript:
+  - javascripts/export-table.js
