@@ -85,3 +85,23 @@ Per últim, cal afeigir aquesta capçalera al full de `dades`
 Una vegada ens hem assegurat de que el fitxer esta ben formatat, i que no hi haurà errors, podem executar la Macro.
 
 Aquesta, marcarà de color `groc` quins són els productes que ha selecionat i els escriurà al full `dades`, d'aquesta manera podem assegurar-nos de que ha generat l'arxiu amb totes les files desitjades.
+
+### 5. Guardar el nou fitxer `dades`
+
+Disposem d'una macro anomenada `RenameAndSaveToPath` , la qual guardarà els arxius a l directori que indiquis. A més tambè afegeix un nom igual per a tots els arxius amb el seu any.
+
+- Cambiar l'any manualment
+
+![cambiar any](./img/creacio-preus/cambiar-any.png)
+
+- Cambiar la destinació
+
+![modificar path](./img/creacio-preus/modifcar_path.png)
+
+## Què fa cada Macro?
+
+- `SelectAndTranferItems : ` Llegeix la columna 'B' fins que no hi haigi més dades. Selecciona cada fila que coincideix amb els valors de l'array, i trasnforma les files al format deitjat a la fulla 'dades'
+
+- `RenameAndSaveToPath : ` Per més agilitat, renombra i guarda el document 'dades' al path especificat
+
+- `FindProducts: ` Simplement marca en groc els productes que contè l'array, pot servir per fet proves abans d'executar 'SelectAndTransferItems' 
