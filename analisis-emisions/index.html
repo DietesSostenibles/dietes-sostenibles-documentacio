@@ -1,0 +1,675 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://mysite.com/analisis-emisions/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../creacio-preus/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+    
+    
+      
+        <title>✔️ Anàlisis dels tipus d'emisions - Documentació Model Optimització</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="brown">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#analisis-dels-tipus-demisions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Documentació Model Optimització" class="md-header__button md-logo" aria-label="Documentació Model Optimització" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentació Model Optimització
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ✔️ Anàlisis dels tipus d'emisions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentació Model Optimització" class="md-nav__button md-logo" aria-label="Documentació Model Optimització" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentació Model Optimització
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Benvingut a la Documentació del Projecte!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ✔️ Anàlisis dels tipus d'emisions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../creacio-preus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ✔️ Creació arxius per a Sèries Històriques
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../validaci%C3%B3-dades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ✔️ Validació de Dades a Excel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="analisis-dels-tipus-demisions">✔️ Anàlisis dels tipus d'emisions</h1>
+<h1 id="shiny-emissions-v3">Shiny Emissions v3</h1>
+<p>Dashboard en <strong>RStudio (Shiny + shinydashboard)</strong> per analitzar l'impacte ambiental de dietes, comparar dues solucions (A i B), desglossar emissions per ingredient i origen, i incorporar l'efecte del transport.</p>
+<h2 id="objectiu-del-projecte">Objectiu del projecte</h2>
+<p>L'aplicacio permet:</p>
+<ol>
+<li>Carregar dades ambientals, de formulacio de dietes i de transport.</li>
+<li>Comparar dos escenaris (Solucio A i Solucio B) per etapa productiva.</li>
+<li>Analitzar impactes ambientals per dieta, per origen geografic i per ingredient.</li>
+<li>Reassignar origens d'ingredients per a simulacio d'escenaris.</li>
+<li>Exportar resums per al seu us extern.</li>
+</ol>
+<h2 id="estructura-del-dashboard">Estructura del dashboard</h2>
+<p>El dashboard s'organitza en:</p>
+<ol>
+<li><strong>Bloc superior de configuracio</strong></li>
+<li><strong>Bloc avancat col-lapsable</strong></li>
+<li><strong>Tabset principal</strong> amb les analisis</li>
+</ol>
+<h3 id="1-bloc-superior-de-configuracio">1. Bloc superior de configuracio</h3>
+<p>Inclou tres passos:</p>
+<ol>
+<li><strong>Importar arxius</strong> (<code>.xlsx</code>):<ul>
+<li>Ambiental</li>
+<li>Dietes</li>
+<li>Transport</li>
+</ul>
+</li>
+<li><strong>Seleccio d'etapa</strong> per comparar:<ul>
+<li><code>stepA</code> (Solucio A)</li>
+<li><code>stepB</code> (Solucio B)</li>
+</ul>
+</li>
+<li><strong>Seleccio d'impactes</strong> a visualitzar:<ul>
+<li><code>climate_change</code></li>
+<li><code>land_use</code></li>
+<li><code>water_use</code></li>
+<li><code>eutrophication_marine</code></li>
+<li><code>acidification</code></li>
+<li><code>particulate_matter</code></li>
+</ul>
+</li>
+</ol>
+<h3 id="2-bloc-avancat-col-lapsable">2. Bloc avancat (col-lapsable)</h3>
+<p>Inclou:</p>
+<ol>
+<li><strong>Reassignacio d'origens</strong> per ingredient (nomes ingredients amb mes d'un origen disponible).</li>
+<li><strong>Aplicar canvi</strong> i <strong>restablir overrides</strong>.</li>
+<li><strong>Descarrega de resum</strong> en CSV (<code>resum_impactes_solucions_&lt;data&gt;.csv</code>).</li>
+</ol>
+<h2 id="dades-dentrada">Dades d'entrada</h2>
+<p>El projecte fa servir 3 fitxers Excel:</p>
+<ol>
+<li><strong>Ambiental</strong></li>
+<li><strong>Dietes</strong></li>
+<li><strong>Transport</strong></li>
+</ol>
+<h3 id="format-esperat-minim">Format esperat (minim)</h3>
+<h4 id="1-ambiental">1. Ambiental</h4>
+<p>Columnes obligatories:</p>
+<ul>
+<li><code>ingredient</code></li>
+<li><code>group</code></li>
+<li><code>origen</code></li>
+<li><code>default_origen</code></li>
+</ul>
+<p>Columnes d'impacte reconegudes (si existeixen):</p>
+<ul>
+<li><code>climate_change</code></li>
+<li><code>land_use</code></li>
+<li><code>water_use</code></li>
+<li><code>eutrophication_marine</code></li>
+<li><code>acidification</code></li>
+<li><code>particulate_matter</code></li>
+</ul>
+<h4 id="2-dietes">2. Dietes</h4>
+<p>Columnes obligatories:</p>
+<ul>
+<li><code>step</code></li>
+<li><code>ingredient</code></li>
+<li><code>diet</code></li>
+<li><code>prop</code></li>
+</ul>
+<h4 id="3-transport">3. Transport</h4>
+<p>Columna obligatoria:</p>
+<ul>
+<li><code>origen</code></li>
+</ul>
+<p>A mes, pot incloure columnes d'impacte per integrar l'efecte del transport per origen.</p>
+<h2 id="unitats-dimpacte">Unitats d'impacte</h2>
+<p>Les unitats definides a l'app son:</p>
+<ul>
+<li><code>climate_change</code>: <code>kg CO2 eq</code></li>
+<li><code>land_use</code>: <code>dimensionless (pt)</code></li>
+<li><code>water_use</code>: <code>m3 world eq</code></li>
+<li><code>eutrophication_marine</code>: <code>kg N eq</code></li>
+<li><code>acidification</code>: <code>mol H+ eq</code></li>
+<li><code>particulate_matter</code>: <code>disease incidence</code></li>
+</ul>
+<h2 id="utilitat-de-cada-tabpanel">Utilitat de cada tabPanel</h2>
+<h3 id="visio-general">Visio general</h3>
+<p>Que mostra:</p>
+<ol>
+<li>KPIs de recompte (<code>ingredients</code>, <code>origins</code>, <code>diets</code>, <code>steps</code>).</li>
+<li>Llistat de dietes per a Solucio A i Solucio B.</li>
+</ol>
+<p>Per a que serveix:</p>
+<ol>
+<li>Validar rapidament que la carrega de dades es correcta.</li>
+<li>Tenir una foto inicial de la dimensio de l'analisi.</li>
+</ol>
+<h3 id="composicio-per-dieta">Composicio per dieta</h3>
+<p>Que mostra:</p>
+<ol>
+<li>Grafic interactiu de composicio per a Solucio A.</li>
+<li>Grafic interactiu de composicio per a Solucio B.</li>
+</ol>
+<p>Per a que serveix:</p>
+<ol>
+<li>Entendre proporcions d'ingredients per dieta.</li>
+<li>Detectar canvis de formulacio entre escenaris.</li>
+</ol>
+<h3 id="impactes-per-dieta">Impactes per dieta</h3>
+<p>Que mostra:</p>
+<ol>
+<li>Barres comparatives A vs B per dieta.</li>
+<li>Un grafic per cada impacte seleccionat.</li>
+</ol>
+<p>Per a que serveix:</p>
+<ol>
+<li>Comparar rendiment ambiental de les dues solucions.</li>
+<li>Detectar en quines dietes apareix la diferencia mes gran.</li>
+</ol>
+<h3 id="contribucio-per-origen">Contribucio per origen</h3>
+<p>Que mostra:</p>
+<ol>
+<li>Barres apilades per origen per a Solucio A.</li>
+<li>Barres apilades per origen per a Solucio B.</li>
+<li>Una analisi per cada impacte seleccionat.</li>
+</ol>
+<p>Per a que serveix:</p>
+<ol>
+<li>Identificar paisos/origens mes contributors.</li>
+<li>Avaluar la sensibilitat geografica de l'impacte.</li>
+</ol>
+<h3 id="top-ingredients">Top ingredients</h3>
+<p>Que mostra:</p>
+<ol>
+<li>Top 5 ingredients per dieta i per impacte seleccionat.</li>
+<li>Comparacio en paral-lel de Solucio A i Solucio B.</li>
+</ol>
+<p>Per a que serveix:</p>
+<ol>
+<li>Prioritzar ingredients objectiu per a reduccio d'emissions.</li>
+<li>Trobar palanques de millora d'alt impacte.</li>
+</ol>
+<h3 id="mapa-dorigens">Mapa d'origens</h3>
+<p>Que mostra:</p>
+<ol>
+<li>Mapa mundial d'origens d'ingredients per a Solucio A.</li>
+<li>Mapa mundial d'origens d'ingredients per a Solucio B.</li>
+</ol>
+<p>Per a que serveix:</p>
+<ol>
+<li>Visualitzar la distribucio geografica de la cadena de subministrament.</li>
+<li>Detectar concentracions d'origen i possibles riscos logistic-ambientals.</li>
+</ol>
+<h3 id="distribucio">Distribucio</h3>
+<p>Que mostra:</p>
+<ol>
+<li>Boxplots A vs B per impacte seleccionat.</li>
+<li>Dispersio de valors entre dietes (amb punts individuals).</li>
+</ol>
+<p>Per a que serveix:</p>
+<ol>
+<li>Analitzar variabilitat, no nomes mitjanes.</li>
+<li>Detectar outliers o dietes amb comportament extrem.</li>
+</ol>
+<h3 id="diferencia-a-b">Diferencia A - B</h3>
+<p>Que mostra:</p>
+<ol>
+<li>Diferencia directa d'impacte per dieta (<code>A - B</code>) per a cada impacte seleccionat.</li>
+<li>Missatge de control quan <code>stepA == stepB</code>.</li>
+</ol>
+<p>Per a que serveix:</p>
+<ol>
+<li>Veure rapidament qui "guanya" per impacte.</li>
+<li>Quantificar magnitud i signe de la diferencia.</li>
+</ol>
+<h3 id="desglossament-impacte">Desglossament Impacte</h3>
+<p>Que mostra:</p>
+<ol>
+<li>Descomposicio de l'impacte en:<ul>
+<li>contribucio d'ingredients</li>
+<li>contribucio de transport</li>
+</ul>
+</li>
+<li>Vista comparativa per a Solucio A i Solucio B.</li>
+</ol>
+<p>Per a que serveix:</p>
+<ol>
+<li>Entendre d'on venen les emissions.</li>
+<li>Decidir si convé actuar en formulacio, origen o logistica.</li>
+</ol>
+<h3 id="verificacio-dingredients">Verificacio d'Ingredients</h3>
+<p>Que mostra:</p>
+<ol>
+<li>Ingredients presents en dietes pero absents a la base ambiental.</li>
+<li>Missatge d'estat correcte quan no hi ha faltants.</li>
+</ol>
+<p>Per a que serveix:</p>
+<ol>
+<li>Control de qualitat de dades abans d'interpretar resultats.</li>
+<li>Evitar conclusions esbiaixades per dades incompletes.</li>
+</ol>
+<h3 id="contribucio-total">Contribucio Total</h3>
+<p>Que mostra:</p>
+<ol>
+<li>Taula editable de <code>kg_consum</code> per dieta/etapa.</li>
+<li>Comparacio d'impacte total acumulat A vs B (barres apilades per etapa).</li>
+</ol>
+<p>Per a que serveix:</p>
+<ol>
+<li>Escalar l'impacte a una realitat de consum.</li>
+<li>Simular escenaris productius amb diferents kg consumits.</li>
+</ol>
+<h3 id="petjada-ambiental">Petjada Ambiental</h3>
+<p>Estat actual:</p>
+<ol>
+<li>Pestanya creada a UI, sense visualitzacions implementades a <code>server.R</code>.</li>
+</ol>
+<p>Per a que serveix (previst):</p>
+<ol>
+<li>Espai reservat per a un resum addicional de petjada ambiental.</li>
+</ol>
+<h2 id="flux-recomanat-dus">Flux recomanat d'us</h2>
+<ol>
+<li>Carregar els tres fitxers (<code>Ambiental</code>, <code>Dietes</code>, <code>Transport</code>).</li>
+<li>Revisar <code>Visio general</code> i <code>Verificacio d'Ingredients</code>.</li>
+<li>Seleccionar <code>stepA</code> i <code>stepB</code>.</li>
+<li>Triar impactes rellevants.</li>
+<li>Analitzar:<ul>
+<li><code>Impactes per dieta</code></li>
+<li><code>Contribucio per origen</code></li>
+<li><code>Top ingredients</code></li>
+<li><code>Desglossament Impacte</code></li>
+</ul>
+</li>
+<li>Si cal, aplicar overrides d'origen i repetir la comparacio.</li>
+<li>Ajustar <code>kg_consum</code> a <code>Contribucio Total</code> per a analisi acumulada.</li>
+<li>Exportar el resum final.</li>
+</ol>
+<h2 id="estructura-del-projecte">Estructura del projecte</h2>
+<ul>
+<li><code>global.R</code>: llibreries, constants globals, funcions de carrega/calc/plot.</li>
+<li><code>ui.R</code>: estructura visual completa del dashboard.</li>
+<li><code>server.R</code>: logica reactiva, validacions, calculs i renderitzat.</li>
+<li><code>www/style.css</code>: estils personalitzats.</li>
+<li><code>Dades/</code>: dades auxiliars (incloent coordenades i taules de paisos).</li>
+</ul>
+<h2 id="execucio">Execucio</h2>
+<p>Des de RStudio, obrir el projecte <code>shiny_emissions_v3.Rproj</code> i executar l'app amb <code>Run App</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../javascripts/export-table.js"></script>
+      
+    
+  </body>
+</html>

@@ -2,14 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://mysite.com/</loc>
-         <lastmod>2025-12-01</lastmod>
+         <lastmod>2026-03-09</lastmod>
+    </url>
+    <url>
+         <loc>https://mysite.com/analisis-emisions/</loc>
+         <lastmod>2026-03-09</lastmod>
     </url>
     <url>
          <loc>https://mysite.com/creacio-preus/</loc>
-         <lastmod>2025-12-01</lastmod>
+         <lastmod>2026-03-09</lastmod>
     </url>
     <url>
          <loc>https://mysite.com/validaci%C3%B3-dades/</loc>
-         <lastmod>2025-12-01</lastmod>
+         <lastmod>2026-03-09</lastmod>
     </url>
 </urlset>
