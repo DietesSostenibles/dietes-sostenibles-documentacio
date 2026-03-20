@@ -8,3 +8,5 @@
 - Validació de dades a través de Taules d'excel : [Tutorial Validació de Dades](./validació-dades.md)
 
 - Dashboard per l'anàlisis d'emissions de Dietes: [Accedeir Documentacio](./analisis-emisions.md)
+
+- Estructura d'arxius per Dashboard d'emissions: [Accedeir Documentacio](./funcionament-format-excels.md)

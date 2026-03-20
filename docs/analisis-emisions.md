@@ -1,4 +1,4 @@
-# Analisis dels tipus d'emisions
+# ✔️ Analisis dels tipus d'emisions
 
 ## Panel 1: Introduccio
 
