@@ -520,6 +520,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#calculs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Càlculs
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -798,6 +809,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#calculs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Càlculs
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -909,9 +931,9 @@
 <h3 id="5-unitats-nous-ingredients">5. Unitats nous ingredients</h3>
 <p>Vam haver d'extreure dades d'un arxiu anomenat <code>dades_Agribalyse</code>, ja que hi havia més quantitat d'ingredients que conformen les dietes que no pas a l'arxiu de dades mediambientals. Això produïa errors en els càlculs.</p>
 <p>Aquí es recullen les unitats dels nous ingredients per a cada emissió predeterminada:</p>
-<p><img alt="Taula Unitats dels ingredients que pertanyen a l'arxiu Agribalyse" src="/docs/img/emissions/taula-unitats-nous.png" /></p>
+<p><img alt="Taula Unitats dels ingredients que pertanyen a l'arxiu Agribalyse" src="../img/emissions/taula-unitats-nous.png" /></p>
 <p>Aquí es mostra informació complementària sobre aquests ingredients:</p>
-<p><img alt="Taula informativa dels ingredients que pertanyen a l'arxiu Agribalyse" src="/docs/img/emissions/taula-info-nous-ing.png" /></p>
+<p><img alt="Taula informativa dels ingredients que pertanyen a l'arxiu Agribalyse" src="../img/emissions/taula-info-nous-ing.png" /></p>
 <h2 id="arxiu-dingredients-utilitzats">Arxiu d'ingredients utilitzats</h2>
 <p>Aquest arxiu recull els ingredients utilitzats al sistema i serveix de base per a la configuració de les dietes. Nomès contè un full.</p>
 <h4 id="caracteristiques-no-modificables_1">Característiques no modificables</h4>
@@ -921,13 +943,13 @@
 - diet  
 - prop
 </code></pre></div></p>
-<p><img alt="Ingredients Utilitzats" src="/docs/img/emissions/ingredients-used.png" /></p>
+<p><img alt="Ingredients Utilitzats" src="../img/emissions/ingredients-used.png" /></p>
 <h2 id="arxiu-de-dades-de-transport">Arxiu de dades de transport</h2>
 <p>Aquest arxiu conté les emissions associades al transport dels ingredients des del país d'origen.</p>
 <p>L'arxiu es divideix en 4 fulls diferents, descrits en el mateix ordre que es troben a l'Excel:</p>
 <h3 id="1-emissio-per-pais">1. Emissió per país</h3>
 <p>El càlcul està separat pels tipus de transport necessaris per arribar a Espanya, segons el país de procedència.</p>
-<p><img alt="Separació dels km per tipus de transport" src="/docs/img/emissions/separaci-km-calcul.png" /></p>
+<p><img alt="Separació dels km per tipus de transport" src="../img/emissions/separaci-km-calcul.png" /></p>
 <p>Hi ha països amb dades buides. Això indica que, per als ingredients seleccionats, aquests països no s'utilitzen com a procedència.</p>
 <h4 id="caracteristiques-no-modificables_2">Característiques no modificables</h4>
 <p>Hi ha algus paisos amb dades vuides, vol dir que no són necessàries, els ingredients seleccionats no utilitzen aquells paisos com a pas de provinença.</p>
@@ -948,12 +970,15 @@
 <p>La columna <code>Origen</code> ha de correspondre amb els orígens definits a l'arxiu de dades mediambientals. No es recomana afegir-ne de nous si no existeixen a la font principal.</p>
 <h4 id="caracteristiques-modificables_1">Característiques modificables</h4>
 <p>Es poden afegir més files o ampliar dades dels orígens existents.</p>
+<h4 id="calculs">Càlculs</h4>
+<p>Els càlculs es realitzen amb una macro per agilitzar el prcès. El nom de la Macro es <code>macro-emissions-transport</code></p>
+<p><a href="https://drive.google.com/drive/folders/1HJ7q8u6ZCWGBks0cR9Pcr28xWqqdXVOn">Descarregar Macro</a></p>
 <h3 id="2-factors-demissio">2. Factors d'emissió</h3>
 <p>Full amb factors de conversió utilitzats en el càlcul de l'impacte del transport.</p>
-<p><img alt="Factors de conversió per transport" src="/docs/img/emissions/factors-converssio.png" /></p>
+<p><img alt="Factors de conversió per transport" src="../img/emissions/factors-converssio.png" /></p>
 <h3 id="3-distribucio-de-quilometres-per-origen">3. Distribució de quilòmetres per origen</h3>
 <p>Full amb la distribució de distàncies per tipus de transport segons l'origen de cada ingredient.</p>
-<p><img alt="Orígens utilitzats pels ingredients" src="/docs/img/emissions/km-dividits.png" /></p>
+<p><img alt="Orígens utilitzats pels ingredients" src="../img/emissions/km-dividits.png" /></p>
 <h3 id="4-informacio">4. Informació</h3>
 <p>Full de suport amb informació addicional per a la interpretació i validació de dades de transport.</p>
 
