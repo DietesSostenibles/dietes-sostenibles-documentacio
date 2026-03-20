@@ -75,11 +75,11 @@ Vam haver d'extreure dades d'un arxiu anomenat `dades_Agribalyse`, ja que hi hav
 
 Aquí es recullen les unitats dels nous ingredients per a cada emissió predeterminada:
 
-![Taula Unitats dels ingredients que pertanyen a l'arxiu Agribalyse](/docs/img/emissions/taula-unitats-nous.png)
+![Taula Unitats dels ingredients que pertanyen a l'arxiu Agribalyse](./img/emissions/taula-unitats-nous.png)
 
 Aquí es mostra informació complementària sobre aquests ingredients:
 
-![Taula informativa dels ingredients que pertanyen a l'arxiu Agribalyse](/docs/img/emissions/taula-info-nous-ing.png)
+![Taula informativa dels ingredients que pertanyen a l'arxiu Agribalyse](./img/emissions/taula-info-nous-ing.png)
 
 ## Arxiu d'ingredients utilitzats
 
@@ -95,7 +95,7 @@ Les capçaleres no es poden modificar:
 - prop
 ```
 
-![Ingredients Utilitzats](/docs/img/emissions/ingredients-used.png)
+![Ingredients Utilitzats](./img/emissions/ingredients-used.png)
 
 ## Arxiu de dades de transport
 
@@ -107,7 +107,7 @@ L'arxiu es divideix en 4 fulls diferents, descrits en el mateix ordre que es tro
 
 El càlcul està separat pels tipus de transport necessaris per arribar a Espanya, segons el país de procedència.
 
-![Separació dels km per tipus de transport](/docs/img/emissions/separaci-km-calcul.png)
+![Separació dels km per tipus de transport](./img/emissions/separaci-km-calcul.png)
 
 Hi ha països amb dades buides. Això indica que, per als ingredients seleccionats, aquests països no s'utilitzen com a procedència.
 
@@ -137,17 +137,23 @@ La columna `Origen` ha de correspondre amb els orígens definits a l'arxiu de da
 
 Es poden afegir més files o ampliar dades dels orígens existents.
 
+#### Càlculs
+
+Els càlculs es realitzen amb una macro per agilitzar el prcès. El nom de la Macro es `macro-emissions-transport`
+
+[Descarregar Macro](https://drive.google.com/drive/folders/1HJ7q8u6ZCWGBks0cR9Pcr28xWqqdXVOn)
+
 ### 2. Factors d'emissió
 
 Full amb factors de conversió utilitzats en el càlcul de l'impacte del transport.
 
-![Factors de conversió per transport](/docs/img/emissions/factors-converssio.png)
+![Factors de conversió per transport](./img/emissions/factors-converssio.png)
 
 ### 3. Distribució de quilòmetres per origen
 
 Full amb la distribució de distàncies per tipus de transport segons l'origen de cada ingredient.
 
-![Orígens utilitzats pels ingredients](/docs/img/emissions/km-dividits.png)
+![Orígens utilitzats pels ingredients](./img/emissions/km-dividits.png)
 
 ### 4. Informació
 
