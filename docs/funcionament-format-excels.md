@@ -61,6 +61,22 @@ També es poden afegir les files necessàries, sempre mantenint l'estructura de 
 
 Full complementari amb dades de petjada ambiental dels ingredients procedents de fonts externes.
 
+#### Característiques NO modificables
+
+Per tal que funcioni óptimament, la taula ha de ser-hi a la fulla número 2 de l'Excel, ja que és en la que busca la corresponent taula. Cualsevol afectació en la posició d'aquesta fulla, requerirá de canvis en l'arxiu `globals.R` a la seva corresponent posició.
+
+![Taula d'Environmental_Footprint mostrant la fulla 2 i l'estructura de la taula](./img/emissions/environmental_footprint.png)
+
+A més a més, tot i que les posicions a la taula son bescanviables, els noms no ho son i ha de mantenir la següent estructura per columnes:
+
+1 - "impact_category": llistat de categories d'impacte a tenir en compte (es poden afegir o restar-ne sense complicacions).
+2 - "normalisation_factor_per_person": valor pel qual es dividirà el càlcul de proporció X impacte.
+3 - "final_weight_factor": valor pel qual es multiplicarà el càlcul de proporció X impacte / normalisation_factor.
+
+Cualsevol canvi de noms o requeriment d'una nova mètrica, haurà de vindre acompanyat d'un canvi de codi a la funció `"carrega_emissions"` del fitxer `globals.R`.
+
+![Bloc de codi a Global](./img/emissions/carrega_emissions.png)
+
 ### 3. Tala_Ingredientes_DST
 
 Full de suport per a la correspondència entre ingredients i estructures internes de càlcul.
