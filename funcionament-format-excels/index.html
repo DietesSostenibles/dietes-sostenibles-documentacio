@@ -960,13 +960,13 @@
 <p>Full complementari amb dades de petjada ambiental dels ingredients procedents de fonts externes.</p>
 <h4 id="caracteristiques-no-modificables_1">Característiques NO modificables</h4>
 <p>Per tal que funcioni óptimament, la taula ha de ser-hi a la fulla número 2 de l'Excel, ja que és en la que busca la corresponent taula. Cualsevol afectació en la posició d'aquesta fulla, requerirá de canvis en l'arxiu <code>globals.R</code> a la seva corresponent posició.</p>
-<p><img alt="Taula d'Environmental_Footprint mostrant la fulla 2 i l'estructura de la taula" src="./img/emissions/environmental_footprint.png" /></p>
+<p><img alt="Taula d'Environmental_Footprint mostrant la fulla 2 i l'estructura de la taula" src="../img/emissions/environmental_footprint.png" /></p>
 <p>A més a més, tot i que les posicions a la taula son bescanviables, els noms no ho son i ha de mantenir la següent estructura per columnes:</p>
 <p>1 - "impact_category": llistat de categories d'impacte a tenir en compte (es poden afegir o restar-ne sense complicacions).
 2 - "normalisation_factor_per_person": valor pel qual es dividirà el càlcul de proporció X impacte.
 3 - "final_weight_factor": valor pel qual es multiplicarà el càlcul de proporció X impacte / normalisation_factor.</p>
 <p>Cualsevol canvi de noms o requeriment d'una nova mètrica, haurà de vindre acompanyat d'un canvi de codi a la funció <code>"carrega_emissions"</code> del fitxer <code>globals.R</code>.</p>
-<p><img alt="Bloc de codi a Global" src="./img/emissions/carrega_emissions.png" /></p>
+<p><img alt="Bloc de codi a Global" src="../img/emissions/carrega_emissions.png" /></p>
 <h3 id="3-tala_ingredientes_dst">3. Tala_Ingredientes_DST</h3>
 <p>Full de suport per a la correspondència entre ingredients i estructures internes de càlcul.</p>
 <h3 id="4-tabla_resultados">4. Tabla_Resultados</h3>
